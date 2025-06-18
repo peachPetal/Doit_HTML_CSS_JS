@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 기본 리스트 스타일 */
+        ul {
+            padding: 0;           /* 기본 패딩 제거 */
+            margin: auto;         /* 상단 마진 추가 */
+            border: 1px solid #ddd; /* 컨테이너 경계선 */
+            width: auto;         /* 너비 지정 (선택 사항) */
+        }
+
+        li {
+            padding: auto; /* 내부 여백 */
+            border-bottom: 1px solid #eee; /* 각 리스트 아이템 하단 경계선 */
+            background-color: #f9f9f9; /* 기본 배경색 */
+            transition: background-color 0.3s ease; /* 부드러운 전환 효과 */
+            cursor: pointer; /* 마우스 포인터를 손가락 모양으로 변경 */
+        }
+
+        /* 마지막 li 요소의 하단 경계선 제거 (선택 사항) */
+        li:last-child {
+            border-bottom: none;
+        }
+
+        /* 마우스를 li에 올렸을 때 배경색 변경 */
+        li:hover {
+            background-color: #e0e0e0; /* 호버 시 배경색 */
+            /* color: #333; /* 호버 시 텍스트 색상 변경도 가능 */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>메뉴1</li>
+            <li>메뉴2</li>
+            <li>메뉴3</li>
+            <li>메뉴4</li>
+        </ul>
+    </div>
+</body>
+</html>
